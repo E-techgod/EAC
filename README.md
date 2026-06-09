@@ -141,5 +141,5 @@ If you change the chat limit, keep these values aligned:
 Repository state is clean from a deployment standpoint:
 - GitHub is connected
 - Vercel deployment is active
-- Groq-backed live agent is working
+- Groq-backed live agent is working 
 - Environment variable documentation has been added
