@@ -6,10 +6,11 @@ or Gemini key** (or a paid Anthropic key) and it auto-detects which to use.
 
 ## What's in the repo
 ```
-index.html      ← the portfolio (the agent calls /api/chat, falls back gracefully)
+index.html      ← the portfolio (the agent calls /api/chat)
 styles.css      ← styles
 assets/         ← your résumé PDF
 api/chat.js     ← Vercel serverless function (key stays server-side)
+.env.example    ← example env var names for local reference
 ```
 
 ## 1. Push to GitHub
@@ -33,6 +34,8 @@ function auto-detects in this order: Groq → Gemini → Anthropic.
 
 Apply to **Production** (and Preview if you want), then **Redeploy** so the variable takes
 effect (Deployments → ⋯ → Redeploy).
+
+For local reference, the expected variable names are also documented in `.env.example`.
 
 ### Optional overrides
 - `AGENT_PROVIDER` = `groq` | `gemini` | `anthropic` — force a provider instead of auto-detect.
