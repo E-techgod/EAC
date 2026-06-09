@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Elias Arellano Campos — AI Engineer</title>
+<meta name="description" content="Elias Arellano Campos — AI Engineer building deep learning and GenAI systems that ship, measured by hard metrics. Houston, TX." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="visuals.css" />
+</head>
+<body>
+
+<template id="__bundler_thumbnail" data-bg-color="#16130f">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#16130f"/>
+    <g fill="none" stroke="#97dea8" stroke-width="6" stroke-linecap="round" opacity="0.9">
+      <path d="M120 400 L300 400 L340 250 L380 540 L430 400 L1080 400"/>
+    </g>
+    <circle cx="600" cy="400" r="14" fill="#97dea8"/>
+    <text x="600" y="610" fill="#f4f1ec" font-family="monospace" font-size="54" font-weight="600" text-anchor="middle" letter-spacing="2">EAC</text>
+    <text x="600" y="670" fill="#8a857d" font-family="monospace" font-size="26" text-anchor="middle" letter-spacing="6">AI ENGINEER</text>
+  </svg>
+</template>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <a class="brand" href="#top">
+    <span class="dot"></span>
+    <b>Elias Arellano Campos</b><span>/ AI Engineer</span>
+  </a>
+  <div class="nav-links">
+    <a href="#work" class="hide-sm">Work</a>
+    <a href="#agent" class="hide-sm">Ask the agent</a>
+    <a href="#stack" class="hide-sm">Stack</a>
+    <a href="assets/Elias_Arellano_Campos_Resume.pdf" download="Elias_Arellano_Campos_Resume.pdf" target="_blank" rel="noopener" class="hide-sm">Résumé ↗</a>
+    <a href="#contact" class="cta">Get in touch</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top" data-screen-label="Hero">
+  <canvas id="wave"></canvas>
+  <div class="wrap">
+    <div class="status reveal"><span class="led"></span> Open to AI / ML Engineer roles · Available May 2026</div>
+    <h1 class="reveal">
+      I build AI systems<br />that ship —<br /><span class="grad">and I measure<br />everything.</span>
+    </h1>
+    <p class="sub reveal">
+      <b>Elias Arellano Campos</b> — AI Engineer specializing in <b>deep learning</b> and <b>GenAI</b>.
+      From 23-channel EEG seizure detection to RAG agents and production fraud models, I design
+      end-to-end systems and prove them with hard numbers.
+    </p>
+    <div class="hero-cta reveal">
+      <a href="#work" class="btn primary">See selected work <span class="arr">↗</span></a>
+      <a href="#agent" class="btn">Ask my AI agent <span class="arr">↗</span></a>
+    </div>
+    <div class="facts reveal">
+      <div class="fact"><div class="k">Based in</div><div class="v">Houston, TX</div></div>
+      <div class="fact"><div class="k">Education</div><div class="v">B.S. CS — Magna Cum Laude</div></div>
+      <div class="fact"><div class="k">Focus</div><div class="v">Deep Learning · GenAI</div></div>
+      <div class="fact"><div class="k">Work auth</div><div class="v">U.S. OPT · No sponsorship</div></div>
+    </div>
+  </div>
+  <div class="scrollcue"><span class="bar"></span> Scroll</div>
+</header>
+
+<!-- ============ TECH MARQUEE ============ -->
+<div class="marquee" aria-label="Tech stack">
+  <div class="marquee-track" id="mqTrack">
+    <span class="mq">PyTorch</span><span class="mq-sep">◆</span>
+    <span class="mq">TensorFlow</span><span class="mq-sep">◆</span>
+    <span class="mq">scikit-learn</span><span class="mq-sep">◆</span>
+    <span class="mq">SBERT</span><span class="mq-sep">◆</span>
+    <span class="mq">Claude API</span><span class="mq-sep">◆</span>
+    <span class="mq">RAG</span><span class="mq-sep">◆</span>
+    <span class="mq">Prompt Engineering</span><span class="mq-sep">◆</span>
+    <span class="mq">OpenCV</span><span class="mq-sep">◆</span>
+    <span class="mq">MediaPipe</span><span class="mq-sep">◆</span>
+    <span class="mq">SHAP</span><span class="mq-sep">◆</span>
+    <span class="mq">XGBoost</span><span class="mq-sep">◆</span>
+    <span class="mq">Flask</span><span class="mq-sep">◆</span>
+    <span class="mq">Streamlit</span><span class="mq-sep">◆</span>
+    <span class="mq">pandas</span><span class="mq-sep">◆</span>
+    <span class="mq">NumPy</span><span class="mq-sep">◆</span>
+    <span class="mq">Python</span><span class="mq-sep">◆</span>
+    <span class="mq">SQL</span><span class="mq-sep">◆</span>
+    <span class="mq">Git</span><span class="mq-sep">◆</span>
+  </div>
+</div>
+
+<!-- ============ METRICS ============ -->
+<section class="metrics" aria-label="Headline results">
+  <div class="grid">
+    <div class="metric reveal">
+      <div class="big" data-count="0.9924" data-dec="4">0.0000</div>
+      <div class="lab">ROC-AUC on EEG seizure detection</div>
+      <div class="ctx">23-channel pediatric EEG · CHB-MIT</div>
+    </div>
+    <div class="metric reveal">
+      <div class="big" data-count="97.1" data-dec="1">0.0<span class="unit">%</span></div>
+      <div class="lab">F1 on the fraud class</div>
+      <div class="ctx">108K-sample holdout · 0.999 ROC-AUC</div>
+    </div>
+    <div class="metric reveal">
+      <div class="big"><span class="unit">+</span><span data-count="47.7" data-dec="1">0.0</span><span class="unit">%</span></div>
+      <div class="lab">Retrieval precision over baseline</div>
+      <div class="ctx">SBERT semantic search · −83% docs</div>
+    </div>
+    <div class="metric reveal">
+      <div class="big" data-count="210" data-dec="0">0<span class="unit">K+</span></div>
+      <div class="lab">Reviews processed end-to-end</div>
+      <div class="ctx">Custom NLP preprocessing · Flask API</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK ============ -->
+<main class="section wrap" id="work">
+  <div class="reveal">
+    <div class="eyebrow"><span class="num">01</span> Selected work</div>
+    <h2 class="h-sec">Five systems, built end-to-end<br />and held to the numbers.</h2>
+    <p class="lead">Architecture, training, evaluation, deployment — straight from GitHub, every result reproducible. Skim the diagrams; the detail's in the repos.</p>
+  </div>
+
+  <!-- FLAGSHIP: EEG -->
+  <article class="proj flagship reveal" data-screen-label="Project: EEG">
+    <div class="proj-index">PROJECT 01 — FLAGSHIP</div>
+    <div class="proj-domain"><span class="sq"></span> Deep Learning · Healthcare</div>
+    <h3>EEG Seizure Detection</h3>
+    <p class="blurb">Four architectures benchmarked for seizure-onset detection on 23-channel pediatric EEG — measuring exactly what temporal modeling adds.</p>
+    <div class="stack">
+      <span>PyTorch</span><span>MNE</span><span>CHB-MIT</span><span>CNN · GRU · LSTM · TCN</span><span>Saliency maps</span>
+    </div>
+    <a class="proj-link" href="https://github.com/ZAYNKD40/DataScience_Seizure_Project" target="_blank" rel="noopener">View repository <span>↗</span></a>
+
+    <div class="viz-block" style="margin-top:34px">
+      <div class="viz-title">Dataset · CHB-MIT scalp EEG (PhysioNet)</div>
+      <div class="dstrip">
+        <div class="d"><div class="dn">23</div><div class="dl">Pediatric patients</div></div>
+        <div class="d"><div class="dn">~1,000<span class="u">h</span></div><div class="dl">Recorded EEG</div></div>
+        <div class="d"><div class="dn">198</div><div class="dl">Labeled seizures</div></div>
+        <div class="d"><div class="dn">23<span class="u">ch</span></div><div class="dl">256 Hz · EDF</div></div>
+      </div>
+    </div>
+
+    <div class="viz-block" style="margin-top:30px">
+      <div class="viz-title">Raw signal · 23-channel scalp EEG during a seizure event</div>
+      <figure class="eeg-trace">
+        <div class="eeg-trace-img">
+          <img src="assets/eeg-seizure-trace.png" alt="23-channel bipolar-montage scalp EEG showing rhythmic, high-amplitude ictal discharge across channels FP1–F7 through CZ–PZ over roughly a ten-second window" loading="lazy" />
+          <span class="eeg-onset"><span class="eeg-onset-tag">ictal discharge</span></span>
+        </div>
+        <figcaption class="shot-cap">
+          <span class="led"></span> <b>CHB-MIT scalp EEG</b> — bipolar montage, 23 channels @ 256 Hz · the rhythmic high-amplitude region is the seizure the models learn to flag · Shoeb 2009, PhysioNet
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="viz-2" style="margin-top:30px">
+      <div>
+        <div class="viz-block">
+          <div class="viz-title">Inference pipeline</div>
+          <div class="flow">
+            <div class="flow-node"><span class="fn-tag">Input</span><span class="fn-label">EEG · 23ch / 256Hz</span></div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-node"><span class="fn-tag">Segment</span><span class="fn-label">10s windows</span></div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-node"><span class="fn-tag">Spatial</span><span class="fn-label">CNN encoder</span></div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-node acc"><span class="fn-tag">Temporal</span><span class="fn-label">GRU</span></div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-node"><span class="fn-tag">Decision</span><span class="fn-label">Seizure / Clear</span></div>
+          </div>
+        </div>
+        <div class="viz-block">
+          <div class="viz-title">The hard part · class imbalance</div>
+          <div class="imbalance">
+            <div class="imb-bar">
+              <div class="imb-neg">64,240 normal windows</div>
+              <div class="imb-pos"></div>
+            </div>
+            <div class="imb-legend">
+              <div class="it"><span class="sw pos"></span><span class="tx"><b>149 seizure windows</b><span>just 0.23% positive</span></span></div>
+              <div class="it"><span class="sw neg"></span><span class="tx"><b>64,389 total</b><span>handled w/ weighted loss</span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="viz-block">
+          <div class="viz-title">Architecture benchmark · F1 score</div>
+          <div class="barchart">
+            <div class="bc-row best"><span class="bc-label">CNN + GRU</span><span class="bc-track"><span class="bc-fill" data-w="85.4"></span></span><span class="bc-val">0.854</span></div>
+            <div class="bc-row"><span class="bc-label">CNN + LSTM</span><span class="bc-track"><span class="bc-fill" data-w="80.2"></span></span><span class="bc-val">0.802</span></div>
+            <div class="bc-row"><span class="bc-label">TCN</span><span class="bc-track"><span class="bc-fill" data-w="72.2"></span></span><span class="bc-val">0.722</span></div>
+            <div class="bc-row"><span class="bc-label">CNN baseline</span><span class="bc-track"><span class="bc-fill" data-w="60.8"></span></span><span class="bc-val">0.608</span></div>
+          </div>
+          <p class="viz-cap">Multi-patient test split (patients 1·2·3·5). <b>CNN+GRU</b> won — F1 <b>0.854</b>, AUC <b>0.9924</b>, recall 0.814. Both temporal models beat the CNN baseline, confirming sequential modeling adds real value.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- FRAUD -->
+  <article class="proj reveal" data-screen-label="Project: Fraud">
+    <div class="proj-meta">
+      <div class="proj-index">PROJECT 02</div>
+      <div class="proj-domain"><span class="sq"></span> Machine Learning · Fintech</div>
+      <h3>Fraud Detection System</h3>
+      <p class="blurb">Random Forest tuned for high recall with near-zero false alarms — every decision SHAP-explainable.</p>
+      <div class="stack"><span>scikit-learn</span><span>Random Forest</span><span>SHAP</span><span>pandas</span></div>
+      <a class="proj-link" href="https://github.com/E-techgod/fraud-detection-ml" target="_blank" rel="noopener">View repository <span>↗</span></a>
+    </div>
+    <div class="proj-body">
+      <div class="viz-block">
+        <div class="viz-title">Confusion matrix · fraud class</div>
+        <div class="cmatrix">
+          <div class="cm-corner"></div>
+          <div class="cm-col">Predicted fraud</div>
+          <div class="cm-col">Predicted legit</div>
+          <div class="cm-row">Actual fraud</div>
+          <div class="cm-cell ok"><span class="cmn" data-count="2016" data-dec="0">0</span><span class="cml">True positive · caught</span></div>
+          <div class="cm-cell err"><span class="cmn">37</span><span class="cml">False neg · missed</span></div>
+          <div class="cm-row">Actual legit</div>
+          <div class="cm-cell err"><span class="cmn">84</span><span class="cml">False pos · false alarm</span></div>
+          <div class="cm-cell muted"><span class="check">✓</span><span class="cml">True neg · cleared</span></div>
+        </div>
+        <p class="viz-cap">Holdout test set. <b>2,016</b> fraud caught vs only <b>84</b> false alarms; FN inferred from 98.2% recall. TN = the large majority of legitimate transactions, correctly cleared.</p>
+      </div>
+      <div class="viz-2" style="margin-top:30px">
+        <div class="viz-block">
+          <div class="viz-title">Separability · ROC-AUC</div>
+          <div class="ring-wrap">
+            <div class="ring" style="--p:359.6"><span class="rv">0.999</span></div>
+            <div class="ring-meta">
+              <div class="rk">ROC-AUC</div>
+              <div class="rd">Near-perfect separation between fraud and legitimate transactions across all thresholds.</div>
+            </div>
+          </div>
+        </div>
+        <div class="viz-block">
+          <div class="viz-title">Precision vs recall · fraud class</div>
+          <div class="barchart">
+            <div class="bc-row best"><span class="bc-label">Recall</span><span class="bc-track"><span class="bc-fill" data-w="98.2"></span></span><span class="bc-val">98.2%</span></div>
+            <div class="bc-row"><span class="bc-label">Precision</span><span class="bc-track"><span class="bc-fill" data-w="96.0"></span></span><span class="bc-val">96.0%</span></div>
+          </div>
+          <p class="viz-cap">Tuned to <b>catch nearly all fraud</b> (recall) while keeping false alarms low (precision) — the right tradeoff for a fraud screen.</p>
+        </div>
+      </div>
+      <div class="kstrip">
+        <div class="k"><div class="n">97.1<span class="u">%</span></div><div class="l">F1 · fraud</div></div>
+        <div class="k"><div class="n">98.2<span class="u">%</span></div><div class="l">Recall</div></div>
+        <div class="k"><div class="n">96.0<span class="u">%</span></div><div class="l">Precision</div></div>
+        <div class="k"><div class="n">99.55<span class="u">%</span></div><div class="l">Accuracy</div></div>
+      </div>
+    </div>
+  </article>
+
+  <!-- AMAZON -->
+  <article class="proj reveal" data-screen-label="Project: Search">
+    <div class="proj-meta">
+      <div class="proj-index">PROJECT 03</div>
+      <div class="proj-domain"><span class="sq"></span> NLP · Information Retrieval</div>
+      <h3>Amazon Opinion<br />Search Engine</h3>
+      <p class="blurb">Swapped Boolean keyword search for SBERT semantic retrieval over 210K+ reviews — higher precision, far less noise.</p>
+      <div class="stack"><span>SBERT</span><span>NLP</span><span>Flask</span><span>Inverted index</span></div>
+      <a class="proj-link" href="https://github.com/E-techgod/amazon_search_engine" target="_blank" rel="noopener">View repository <span>↗</span></a>
+    </div>
+    <div class="proj-body">
+      <div class="viz-block">
+        <div class="viz-title">Retrieval pipeline</div>
+        <div class="flow">
+          <div class="flow-node"><span class="fn-tag">Query</span><span class="fn-label">"audio quality: poor"</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node"><span class="fn-tag">Clean</span><span class="fn-label">Preprocess</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node acc"><span class="fn-tag">Embed</span><span class="fn-label">SBERT</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node"><span class="fn-tag">Match</span><span class="fn-label">Cosine top-k</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node"><span class="fn-tag">Output</span><span class="fn-label">Ranked reviews</span></div>
+        </div>
+      </div>
+      <div class="viz-2" style="margin-top:30px">
+        <div class="viz-block">
+          <div class="viz-title">Avg precision ↑ (higher better)</div>
+          <div class="barchart">
+            <div class="bc-row best"><span class="bc-label">SBERT</span><span class="bc-track"><span class="bc-fill" data-w="57.8"></span></span><span class="bc-val">0.578</span></div>
+            <div class="bc-row"><span class="bc-label">Lang. model</span><span class="bc-track"><span class="bc-fill" data-w="55.0"></span></span><span class="bc-val">0.550</span></div>
+            <div class="bc-row"><span class="bc-label">Boolean</span><span class="bc-track"><span class="bc-fill" data-w="39.1"></span></span><span class="bc-val">0.391</span></div>
+          </div>
+        </div>
+        <div class="viz-block">
+          <div class="viz-title">Docs retrieved ↓ (lower better)</div>
+          <div class="barchart">
+            <div class="bc-row down"><span class="bc-label">Boolean</span><span class="bc-track"><span class="bc-fill" data-w="100"></span></span><span class="bc-val">1,278</span></div>
+            <div class="bc-row down"><span class="bc-label">Lang. model</span><span class="bc-track"><span class="bc-fill" data-w="45.5"></span></span><span class="bc-val">582</span></div>
+            <div class="bc-row best"><span class="bc-label">SBERT</span><span class="bc-track"><span class="bc-fill" data-w="16.9"></span></span><span class="bc-val">216</span></div>
+          </div>
+        </div>
+      </div>
+      <p class="viz-cap">Five real-world opinion queries · <b>+47.7%</b> precision (0.39 → 0.58) while cutting retrieved docs <b>83%</b>. Deployed as a Flask API.</p>
+      <div class="viz-block" style="margin-top:28px">
+        <div class="viz-title">Evaluation queries · aspect → opinion</div>
+        <div class="chipset">
+          <span class="qc">audio quality <span class="qa">→</span> <em>poor</em></span>
+          <span class="qc">wifi signal <span class="qa">→</span> <em>strong</em></span>
+          <span class="qc">mouse button <span class="qa">→</span> <em>click problem</em></span>
+          <span class="qc">gps map <span class="qa">→</span> <em>useful</em></span>
+          <span class="qc">image quality <span class="qa">→</span> <em>sharp</em></span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- F1 CV -->
+  <article class="proj reveal" data-screen-label="Project: F1">
+    <div class="proj-meta">
+      <div class="proj-index">PROJECT 04</div>
+      <div class="proj-domain"><span class="sq"></span> Computer Vision · Real-time</div>
+      <h3>F1 Driver<br />Recognition</h3>
+      <p class="blurb">Real-time perception: webcam → face ID → API logging → live dashboard, recognition and overlay in under 100ms.</p>
+      <div class="stack"><span>OpenCV</span><span>KNN</span><span>Streamlit</span><span>Flask</span><span>SQLite</span></div>
+      <a class="proj-link" href="https://github.com/E-techgod/f1_driver_recognition" target="_blank" rel="noopener">View repository <span>↗</span></a>
+    </div>
+    <div class="proj-body">
+      <div class="viz-block">
+        <div class="shot">
+          <img src="assets/f1-recognition-demo.png" alt="Live F1 driver recognition: green bounding box around the detected face, name label, and a real-time stats dossier overlay" loading="lazy" />
+          <div class="shot-cap"><span class="led"></span> <b>Live capture</b> — face detected → driver identified → stats dossier rendered, &lt;100ms</div>
+        </div>
+      </div>
+      <div class="viz-block">
+        <div class="viz-title">Pipeline architecture</div>
+        <div class="flow">
+          <div class="flow-node"><span class="fn-tag">Capture</span><span class="fn-label">Webcam</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node"><span class="fn-tag">Detect</span><span class="fn-label">Haar cascade</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node acc"><span class="fn-tag">Classify</span><span class="fn-label">KNN face ID</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node"><span class="fn-tag">Log</span><span class="fn-label">Flask → SQLite</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node"><span class="fn-tag">Visualize</span><span class="fn-label">Streamlit</span></div>
+        </div>
+      </div>
+      <div class="kstrip">
+        <div class="k"><div class="n">&lt;100<span class="u">ms</span></div><div class="l">Detect → overlay</div></div>
+        <div class="k"><div class="n">10</div><div class="l">Drivers</div></div>
+        <div class="k"><div class="n">0–100</div><div class="l">Fantasy score</div></div>
+      </div>
+      <div class="viz-block" style="margin-top:30px">
+        <div class="viz-title">Driver roster · trained classes</div>
+        <div class="chipset">
+          <span class="qc">Verstappen</span><span class="qc">Hamilton</span><span class="qc">Leclerc</span>
+          <span class="qc">Piastri</span><span class="qc">Norris</span><span class="qc">Antonelli</span>
+          <span class="qc">Alonso</span><span class="qc">Sainz</span><span class="qc">Albon</span><span class="qc">Russell</span>
+        </div>
+      </div>
+      <div class="viz-block">
+        <div class="viz-title">Fantasy scoring engine · weighted factors</div>
+        <div class="chipset">
+          <span class="qc">Wins</span><span class="qc">Podiums</span><span class="qc">Points / race</span>
+          <span class="qc">Win → podium conv.</span><span class="qc">Pole → win conv.</span>
+          <span class="qc">Fastest laps</span><span class="qc">DNF rate <em>penalty</em></span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- RAG -->
+  <article class="proj reveal" data-screen-label="Project: RAG">
+    <div class="proj-meta">
+      <div class="proj-index">PROJECT 05</div>
+      <div class="proj-domain"><span class="sq"></span> GenAI · Retrieval-Augmented</div>
+      <h3>RAG Document<br />Q&amp;A Agent</h3>
+      <p class="blurb">Retrieval-augmented Q&amp;A over PDFs and text — TF-IDF retrieval feeding Gemini for cited, grounded answers.</p>
+      <div class="stack"><span>Gemini API</span><span>Streamlit</span><span>pdf.js</span><span>TF-IDF</span><span>RAG</span></div>
+      <a class="proj-link" href="https://github.com/E-techgod/AI-Tennis" target="_blank" rel="noopener">View repository <span>↗</span></a>
+    </div>
+    <div class="proj-body">
+      <div class="viz-block">
+        <div class="shot">
+          <img src="assets/rag-tennis-demo.png" alt="AI Tennis RAG agent UI: sidebar with API key, uploaded tennis PDFs and a knowledge base of 3 docs and 117 chunks; the chat answers beginner questions with source-cited passages and refuses an out-of-scope question about Max Verstappen" loading="lazy" />
+          <div class="shot-cap"><span class="led"></span> <b>AI Tennis</b> — the deployed agent grounds answers in uploaded docs (source-cited, e.g. &ldquo;6 source chunks retrieved&rdquo;) and correctly refuses off-topic questions like &ldquo;Who is Max Verstappen?&rdquo;</div>
+        </div>
+      </div>
+      <div class="viz-block">
+        <div class="viz-title">Retrieval-augmented generation flow</div>
+        <div class="flow">
+          <div class="flow-node"><span class="fn-tag">Source</span><span class="fn-label">PDF / text</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node"><span class="fn-tag">Split</span><span class="fn-label">Overlapping chunks</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node"><span class="fn-tag">Index</span><span class="fn-label">TF-IDF</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node"><span class="fn-tag">Retrieve</span><span class="fn-label">Cosine top-k</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node acc"><span class="fn-tag">Generate</span><span class="fn-label">Gemini</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-node"><span class="fn-tag">Answer</span><span class="fn-label">Cited + grounded</span></div>
+        </div>
+        <p class="viz-cap">Overlapping chunks prevent context fragmentation; answers carry <b>source attribution</b> back to the retrieved passages. The same pattern powers the live agent below.</p>
+        <div class="chipset" style="margin-top:22px">
+          <span class="qc">PDF + text ingestion</span>
+          <span class="qc">Overlapping chunks</span>
+          <span class="qc">TF-IDF + cosine</span>
+          <span class="qc">Similarity scoring</span>
+          <span class="qc">Source-attributed <em>answers</em></span>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>
+
+<!-- ============ ASK THE AGENT ============ -->
+<section class="agent-sec section" id="agent" data-screen-label="Ask the agent">
+  <div class="wrap">
+    <div class="agent-head reveal">
+      <div class="eyebrow"><span class="num">02</span> Proof, not promises</div>
+      <h2 class="h-sec">Don't read about my GenAI work.<br />Talk to it.</h2>
+      <p class="lead">This terminal is a retrieval-grounded agent that answers questions about my background using my real résumé and project data — built with the same RAG pattern as Project 05. Ask it anything.</p>
+    </div>
+
+    <div class="term reveal">
+      <div class="term-bar">
+        <div class="term-dots"><i></i><i></i><i></i></div>
+        <div class="term-title"><b>elias-agent</b> — grounded on résumé + GitHub</div>
+        <div class="term-status"><span class="led"></span> online</div>
+      </div>
+      <div class="term-body" id="termBody">
+        <div class="msg bot">
+          <div class="av">EA</div>
+          <div class="body">
+            <div class="who">elias-agent</div>
+            Hi — I'm Elias's portfolio agent. I can answer questions about his projects, results, skills, and availability, grounded in his real data. Try a question below, or type your own.
+          </div>
+        </div>
+      </div>
+      <div class="term-foot">
+        <div class="suggest" id="suggest">
+          <button data-q="What's the most impressive result on this page?">Most impressive result?</button>
+          <button data-q="Summarize the EEG seizure detection project and why it matters.">EEG project deep-dive</button>
+          <button data-q="Why CNN+GRU over LSTM for the EEG model, and what tradeoffs were involved?">Why CNN+GRU over LSTM?</button>
+          <button data-q="What's Elias's experience with GenAI, LLMs and RAG?">GenAI &amp; RAG experience</button>
+          <button data-q="Why should I hire Elias as an AI Engineer?">Why hire Elias?</button>
+          <button data-q="What's his work authorization and availability?">Availability &amp; work auth</button>
+        </div>
+        <div class="inputrow">
+          <span class="prompt">›</span>
+          <input id="agentInput" type="text" placeholder="Ask about Elias's work, results, or availability…" autocomplete="off" />
+          <button class="send" id="agentSend" aria-label="Send">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+        <div class="agent-note">
+          <span class="dot" style="width:6px;height:6px;border-radius:50%;background:var(--acc);display:inline-block"></span>
+          <span>Live demo, grounded only on Elias's résumé &amp; GitHub. Limited to <b style="color:var(--ink-2)">4 messages per visitor</b> to keep this self-funded demo's API costs in check — <span id="msgLeft" style="color:var(--acc)">4 left</span>.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STACK ============ -->
+<section class="section wrap" id="stack">
+  <div class="reveal">
+    <div class="eyebrow"><span class="num">03</span> Capabilities</div>
+    <h2 class="h-sec">A full-stack ML toolkit,<br />from architecture to API.</h2>
+  </div>
+  <div class="caps reveal">
+    <div class="cap">
+      <div class="h">ML &amp; Deep Learning</div>
+      <div class="chipset">
+        <span class="qc">PyTorch</span><span class="qc">TensorFlow</span><span class="qc">scikit-learn</span><span class="qc">XGBoost</span><span class="qc">CNN</span><span class="qc">LSTM</span><span class="qc">GRU</span><span class="qc">TCN</span><span class="qc">Imbalanced data</span><span class="qc">Threshold tuning</span>
+      </div>
+    </div>
+    <div class="cap">
+      <div class="h">GenAI &amp; NLP</div>
+      <div class="chipset">
+        <span class="qc">Claude / LLM APIs</span><span class="qc">RAG</span><span class="qc">Prompt engineering</span><span class="qc">SBERT</span><span class="qc">Semantic search</span><span class="qc">TF-IDF</span><span class="qc">NLP preprocessing</span>
+      </div>
+    </div>
+    <div class="cap">
+      <div class="h">Vision &amp; Explainability</div>
+      <div class="chipset">
+        <span class="qc">OpenCV</span><span class="qc">MediaPipe</span><span class="qc">KNN face rec.</span><span class="qc">SHAP</span><span class="qc">Saliency maps</span><span class="qc">Error analysis</span>
+      </div>
+    </div>
+    <div class="cap">
+      <div class="h">Deploy &amp; Tooling</div>
+      <div class="chipset">
+        <span class="qc">Flask</span><span class="qc">Streamlit</span><span class="qc">Shiny</span><span class="qc">Python</span><span class="qc">R</span><span class="qc">SQL</span><span class="qc">C++</span><span class="qc">Java</span><span class="qc">Git</span><span class="qc">Linux</span><span class="qc">SQLite</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT + CONTACT ============ -->
+<section class="section wrap" id="contact">
+  <div class="reveal" style="margin-bottom:54px">
+    <div class="eyebrow"><span class="num">04</span> About &amp; contact</div>
+  </div>
+  <div class="about-grid">
+    <div class="about-body reveal">
+      <p class="lq">I'm an AI Engineer who treats <em>evaluation</em> as a first-class part of building — not an afterthought.</p>
+      <p>I'm finishing a <b>B.S. in Computer Science</b> at the University of Houston (Magna Cum Laude, Dean's List) with a concentration in <b>Data Science &amp; Machine Learning</b> and a minor in Mathematics.</p>
+      <p>My work spans deep learning for healthcare, production fraud detection, semantic search, real-time computer vision, and retrieval-augmented GenAI. What ties it together: I ship complete systems and back every claim with reproducible metrics, explainability, and honest error analysis.</p>
+      <p>I'm <b>fluent in English and a native Spanish speaker</b>, based in Houston, and <b>available May 2026</b> on U.S. OPT — TN-visa eligible, with no H-1B sponsorship required.</p>
+    </div>
+
+    <div class="contact-card reveal">
+      <div class="top">
+        <div class="h">Let's build something measurable.</div>
+        <p>Open to AI / ML Engineer roles and serious collaborations. The fastest way to reach me:</p>
+      </div>
+      <a class="clink" href="mailto:elias.arellano.campos@gmail.com">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+        <span class="t"><span class="k">Email</span><span class="v">elias.arellano.campos@gmail.com</span></span>
+        <span class="arr">↗</span>
+      </a>
+      <a class="clink" href="https://www.linkedin.com/in/eliasarellanocampos" target="_blank" rel="noopener noreferrer">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.3c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21h-4z"/></svg></span>
+        <span class="t"><span class="k">LinkedIn</span><span class="v">in/eliasarellanocampos</span></span>
+        <span class="arr">↗</span>
+      </a>
+      <a class="clink" href="https://github.com/E-techgod" target="_blank">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.85 9.73.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.55-1.14-4.55-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg></span>
+        <span class="t"><span class="k">GitHub</span><span class="v">github.com/E-techgod</span></span>
+        <span class="arr">↗</span>
+      </a>
+      <a class="clink" href="assets/Elias_Arellano_Campos_Resume.pdf" download="Elias_Arellano_Campos_Resume.pdf" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="m9 15 3 3 3-3"/></svg></span>
+        <span class="t"><span class="k">Résumé</span><span class="v">Download PDF</span></span>
+        <span class="arr">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="l">© 2026 <b>Elias Arellano Campos</b> · AI Engineer · Houston, TX</div>
+    <div class="r">
+      <a href="mailto:elias.arellano.campos@gmail.com">Email</a>
+      <a href="https://github.com/E-techgod" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/eliasarellanocampos" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="#top">Top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* =========================================================
+   Elias Arellano Campos — portfolio interactions
+   ========================================================= */
+(function () {
+  "use strict";
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- nav shadow on scroll ---------- */
+  const nav = document.getElementById("nav");
+  const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 24);
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  /* ---------- marquee: duplicate track for seamless loop ---------- */
+  const mqTrack = document.getElementById("mqTrack");
+  if (mqTrack && !reduce) {
+    mqTrack.innerHTML = mqTrack.innerHTML + mqTrack.innerHTML;
+  }
+
+  /* ---------- reveal on scroll ---------- */
+  const revs = [...document.querySelectorAll(".reveal")];
+  if (reduce) {
+    revs.forEach((r) => r.classList.add("in"));
+  } else {
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("in");
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+    );
+    revs.forEach((r) => io.observe(r));
+  }
+
+  /* ---------- animated count-up ---------- */
+  function animateCount(el) {
+    const target = parseFloat(el.dataset.count);
+    const dec = parseInt(el.dataset.dec || "0", 10);
+    const unitSpan = el.querySelector(".unit");
+    const unitHTML = unitSpan ? unitSpan.outerHTML : "";
+    if (reduce) {
+      el.innerHTML = target.toFixed(dec) + unitHTML;
+      return;
+    }
+    const dur = 1500;
+    const t0 = performance.now();
+    function frame(now) {
+      const p = Math.min(1, (now - t0) / dur);
+      const eased = 1 - Math.pow(1 - p, 3);
+      const val = (target * eased).toFixed(dec);
+      el.innerHTML = val + unitHTML;
+      if (p < 1) requestAnimationFrame(frame);
+      else el.innerHTML = target.toFixed(dec) + unitHTML;
+    }
+    requestAnimationFrame(frame);
+  }
+  const counters = [...document.querySelectorAll("[data-count]")];
+  const cio = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          animateCount(e.target);
+          cio.unobserve(e.target);
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+  counters.forEach((c) => cio.observe(c));
+
+  /* ---------- bar fills (charts) ---------- */
+  const bio = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          const el = e.target;
+          const w = parseFloat(el.dataset.w);
+          requestAnimationFrame(() => {
+            el.style.width = (isNaN(w) ? 0 : w) + "%";
+          });
+          bio.unobserve(el);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+  document.querySelectorAll(".bar i, .bc-fill").forEach((i) => {
+    i.style.width = "0%";
+    bio.observe(i);
+  });
+
+  /* =========================================================
+     HERO WAVEFORM — oscilloscope / EEG signal motif
+     ========================================================= */
+  const canvas = document.getElementById("wave");
+  if (canvas && !reduce) {
+    const ctx = canvas.getContext("2d");
+    let W, H, dpr;
+    const accent = "151, 222, 168";
+    function resize() {
+      dpr = Math.min(2, window.devicePixelRatio || 1);
+      W = canvas.clientWidth;
+      H = canvas.clientHeight;
+      canvas.width = W * dpr;
+      canvas.height = H * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    resize();
+    window.addEventListener("resize", resize);
+
+    const channels = 5;
+    function rng(seed) {
+      return function () {
+        seed = (seed * 9301 + 49297) % 233280;
+        return seed / 233280;
+      };
+    }
+    const seeds = Array.from({ length: channels }, (_, i) => rng(i * 97 + 11));
+
+    let t = 0;
+    function noiseLine(yBase, amp, freq, phase, rand) {
+      ctx.beginPath();
+      const step = 6;
+      for (let x = 0; x <= W; x += step) {
+        const n =
+          Math.sin(x * freq + phase) * amp +
+          Math.sin(x * freq * 2.3 + phase * 1.7) * amp * 0.4 +
+          (rand(x) - 0.5) * amp * 0.7;
+        const burst =
+          Math.exp(-Math.pow(((x / W) * 6 + Math.sin(phase * 0.5)) % 6 - 3, 2) * 2) *
+          amp *
+          2.4 *
+          Math.max(0, Math.sin(phase * 0.6));
+        const y = yBase + n - burst;
+        if (x === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+    }
+    function draw() {
+      ctx.clearRect(0, 0, W, H);
+      const gap = H / (channels + 1);
+      for (let c = 0; c < channels; c++) {
+        const yBase = gap * (c + 1);
+        const amp = gap * 0.34;
+        const freq = 0.012 + c * 0.0026;
+        const phase = t * (0.9 + c * 0.18) + c * 1.3;
+        const fade = 0.16 + 0.12 * Math.abs(Math.sin(t * 0.3 + c));
+        ctx.strokeStyle = `rgba(${accent}, ${fade})`;
+        ctx.lineWidth = 1.4;
+        const r = seeds[c];
+        let cache = {};
+        const rand = (x) => {
+          if (cache[x] === undefined) cache[x] = r();
+          return cache[x];
+        };
+        noiseLine(yBase, amp, freq, phase, rand);
+        ctx.stroke();
+      }
+      t += 0.025;
+      requestAnimationFrame(draw);
+    }
+    draw();
+  }
+
+  /* =========================================================
+     ASK THE AGENT — Claude-grounded Q&A
+     ========================================================= */
+  const PROFILE = `
+You are "elias-agent", the portfolio AI assistant for Elias Arellano Campos, answering recruiters, hiring managers, and collaborators. Speak about Elias in third person — confident, factual, technical.
+
+ANSWERING RULES:
+- GROUNDING — Answer ONLY from Elias's portfolio/project knowledge base below (his projects, results, tools, decisions, background). Never use outside facts, other people's work, or general knowledge that isn't tied to Elias.
+- DEPTH — Whenever the question allows, explain the engineering: the DECISIONS and TRADEOFFS Elias made, the METRICS that back them, the TOOLS he used, and how the system was DEPLOYED. Be concrete and cite the real numbers.
+- INFERENCE — If the exact answer isn't documented above, make a reasonable, well-grounded engineering inference from what IS known and clearly label it: begin that sentence with "(Inference)". Never present an undocumented number, employer, date, or credential as established fact.
+- DON'T OVER-REFUSE — Decline only when a question is entirely unrelated to Elias or his work. Always prefer a clearly-labeled inference over "I don't know."
+- STYLE — Write for a recruiter who SKIMS, not reads. Lead with the headline answer in one short sentence, then back it up. Keep paragraphs to 1-2 sentences and put a blank line between distinct ideas. When you mention 2+ projects, metrics, or steps, break them onto separate bullet lines (one "- " per line) instead of packing them into a sentence. **Bold** the numbers that matter. Stay tight and conversational — skimmable beats exhaustive, and depth should be chunked, never dense. Speak about Elias in third person, and invite reaching out (email / LinkedIn) when it fits.
+
+=== IDENTITY ===
+Name: Elias Arellano Campos. Role: AI Engineer (specialties: deep learning + Generative AI).
+Location: Houston, TX. Languages: English (fluent), Spanish (native).
+Education: B.S. Computer Science, University of Houston, graduating May 2026. Minor in Mathematics. Concentration: Data Science & Machine Learning. Honors: Dean's List, Magna Cum Laude.
+Work authorization: U.S. OPT active, TN Visa eligible, does NOT require H-1B sponsorship. Available May 2026.
+Contact: elias.arellano.campos@gmail.com | linkedin.com/in/eliasarellanocampos | github.com/E-techgod.
+
+=== POSITIONING / EDGE ===
+Builds complete end-to-end ML and GenAI systems (architecture -> training -> evaluation -> explainability -> deployment) and backs every claim with reproducible, quantified results. Treats evaluation and error analysis as first-class. Strong at imbalanced data, explainability (SHAP, saliency maps), and shipping via REST APIs and dashboards.
+
+=== PROJECTS (all real, on GitHub) ===
+1) EEG Seizure Detection (FLAGSHIP) — PyTorch, MNE, CHB-MIT. Built at the Hewlett Packard Enterprise Data Science Institute, University of Houston (advisor Dr. Nouhad Rizk), as a team with Khoa Anh Dao and John C Williams. Designed & compared 4 architectures (CNN, CNN+LSTM, CNN+GRU, TCN) for binary seizure detection on 23-channel pediatric EEG. Best results: CNN+GRU reached F1 0.8537 and AUC 0.9924; CNN+LSTM had highest recall 0.8256. Handled a severe ~0.23% positive rate with weighted loss, threshold optimization, LR scheduling, gradient clipping. Added saliency-map explainability and per-patient error analysis. Temporal models beat the CNN baseline (F1 0.6082), confirming the hypothesis that sequential modeling helps.
+
+2) Fraud Detection System — Python, scikit-learn, Random Forest, SHAP, pandas. 97.1% F1 on the fraud class, 98.2% recall, 96.0% precision, 0.999 ROC-AUC, 99.55% overall accuracy on a 108K-sample balanced holdout. Only 84 false positives against 2,016 correctly identified fraud cases. SHAP for global + per-prediction explanations.
+
+3) Amazon Review Opinion Search Engine — Python, SBERT, NLP, Flask. Semantic opinion search over 210,000+ Amazon reviews. SBERT semantic retrieval lifted average precision +47.7% (0.39 -> 0.58) while cutting retrieved documents by 83%, across 5 real-world opinion queries. Custom preprocessing showed cleaner data beats larger unfiltered sets. Deployed as a Flask API for real-time query.
+
+4) F1 Driver Recognition — OpenCV, KNN, Haar cascades, Streamlit, Flask, SQLite. Real-time computer vision pipeline: webcam capture -> KNN face classification -> Flask API attendance logging (CSV + SQLite) -> live Streamlit dashboard with driver stats and a normalized 0-100 fantasy leaderboard. Recognition + overlay in under 100ms. Recognizes 10 drivers. Architecture maps to industrial worker-ID and assembly-line recognition.
+
+5) RAG Document Q&A Agent (AI Tennis) — Python, Streamlit, Gemini API, TF-IDF. End-to-end retrieval-augmented pipeline with TF-IDF indexing + cosine-similarity retrieval, supporting text and PDF ingestion. Google Gemini (gemini-2.5-flash) for context-grounded, source-attributed answers. Configurable overlapping-chunk strategy prevents context fragmentation; out-of-scope questions are correctly refused. Repo: github.com/E-techgod/AI-Tennis. (This portfolio's live agent uses the same RAG pattern.)
+
+=== SKILLS ===
+Programming: Python, R, SQL, C++, Java.
+ML & AI: PyTorch, TensorFlow, scikit-learn, XGBoost, NumPy, pandas, SHAP, NLP, Deep Learning, GenAI, LLM APIs, Prompt Engineering, RAG, REST APIs.
+Computer Vision: OpenCV, MediaPipe.
+Web & Tools: Flask, Streamlit, Shiny, Git, Linux, Jupyter, VS Code.
+
+=== APPLIED EXPERIENCE (2024-2025) ===
+Designed/deployed end-to-end GenAI apps integrating LLM APIs with custom retrieval pipelines, prompt engineering, and context-grounded generation. Built and productionized deep learning systems over large datasets through evaluation and REST API deployment. Enabled real-time inference via Flask APIs and Streamlit dashboards. Applied SHAP and saliency maps to validate behavior and find failure modes.
+
+=== DESIGN DECISIONS & TRADEOFFS (documented) ===
+- EEG: the severe ~0.23% positive rate was handled with weighted loss, threshold optimization, LR scheduling, and gradient clipping. CNN+GRU was chosen as best overall (F1 0.8537, AUC 0.9924) — GRU gives strong temporal modeling with fewer parameters than LSTM. CNN+LSTM reaches the highest recall (0.8256) at a lower threshold (0.20), trading precision for fewer missed seizures — valuable when a missed seizure costs more than a false alarm. Saliency maps + per-patient error analysis confirm the model attends to plausible EEG regions and expose generalization gaps.
+- Fraud: tuned for high recall (catch ~98.2% of fraud) while holding precision high (96.0%) to limit false alarms — the right balance for a fraud screen. SHAP provides both global feature importance and per-prediction reasoning, so every decision is auditable.
+- Amazon search: replaced Boolean keyword matching with SBERT semantic retrieval because keyword search misses meaning — yielding +47.7% precision and 83% fewer documents retrieved. Found cleaner preprocessed data beat larger unfiltered sets. Shipped as a Flask API for real-time semantic query.
+- F1 recognition: KNN + Haar cascades chosen for low-latency inference (<100ms detect to overlay); attendance logged via a Flask API to CSV + SQLite; stats shown in a Streamlit dashboard. The capture to classify to log to dashboard architecture generalizes to industrial worker-ID and assembly-line recognition.
+- RAG agent: an overlapping-chunk strategy prevents context fragmentation across long documents; TF-IDF + cosine retrieval feeds the Gemini API; answers carry source attribution for grounding and out-of-scope questions are refused.
+
+=== THIS PORTFOLIO'S LIVE AGENT (you) ===
+You run on a Vercel serverless function calling a free-tier LLM API (Groq or Google Gemini), with a 4-message-per-visitor cap — a small, real RAG-style deployment Elias built to demonstrate the GenAI skills above.
+`.trim();
+
+  const body = document.getElementById("termBody");
+  const input = document.getElementById("agentInput");
+  const sendBtn = document.getElementById("agentSend");
+  const suggest = document.getElementById("suggest");
+  const MAX_MSGS = 4;
+  let sessionCount = 0;
+  let busy = false;
+  const convo = []; // [{role:'user'|'assistant', content}]
+  const leftEl = document.getElementById("msgLeft");
+
+  function updateCounter() {
+    const left = Math.max(0, MAX_MSGS - sessionCount);
+    if (leftEl) leftEl.textContent = left + " left";
+  }
+
+  function lockInput() {
+    input.disabled = true;
+    sendBtn.disabled = true;
+    input.value = "";
+    input.placeholder = "Message limit reached — email Elias to keep talking";
+    suggest.style.display = "none";
+  }
+
+  function addMsg(role, text) {
+    const wrap = document.createElement("div");
+    wrap.className = "msg " + (role === "user" ? "user" : "bot");
+    wrap.innerHTML =
+      '<div class="av">' + (role === "user" ? "you" : "EA") + '</div>' +
+      '<div class="body"><div class="who">' + (role === "user" ? "you" : "elias-agent") + '</div><span class="txt"></span></div>';
+    wrap.querySelector(".txt").textContent = text;
+    body.appendChild(wrap);
+    body.scrollTop = body.scrollHeight;
+    return wrap.querySelector(".txt");
+  }
+
+  function addTyping() {
+    const wrap = document.createElement("div");
+    wrap.className = "msg bot";
+    wrap.innerHTML = '<div class="av">EA</div><div class="body"><div class="who">elias-agent</div><span class="typing"><i></i><i></i><i></i></span></div>';
+    body.appendChild(wrap);
+    body.scrollTop = body.scrollHeight;
+    return wrap;
+  }
+
+  // inline formatting: **bold** within a single line
+  function applyInline(target, text) {
+    const parts = text.split(/(\*\*[^*]+\*\*)/g);
+    parts.forEach((p) => {
+      if (!p) return;
+      if (/^\*\*[^*]+\*\*$/.test(p)) {
+        const b = document.createElement("b");
+        b.textContent = p.slice(2, -2);
+        target.appendChild(b);
+      } else {
+        target.appendChild(document.createTextNode(p));
+      }
+    });
+  }
+
+  // block formatting: blank line -> paragraph break, "- " lines -> bullet list.
+  // Rebuilt on every streamed slice, so it must tolerate partial markdown.
+  function renderRich(el, text) {
+    el.innerHTML = "";
+    const lines = text.split("\n");
+    let buf = [];
+    let list = null;
+    function flushPara() {
+      if (!buf.length) return;
+      const p = document.createElement("p");
+      p.className = "ln";
+      buf.forEach((ln, idx) => {
+        if (idx) p.appendChild(document.createElement("br"));
+        applyInline(p, ln);
+      });
+      el.appendChild(p);
+      buf = [];
+    }
+    for (const raw of lines) {
+      const line = raw.replace(/\s+$/, "");
+      const bullet = /^\s*(?:[-*•])\s+(.*)$/.exec(line);
+      if (bullet) {
+        flushPara();
+        if (!list) {
+          list = document.createElement("ul");
+          list.className = "ans-list";
+          el.appendChild(list);
+        }
+        const li = document.createElement("li");
+        applyInline(li, bullet[1]);
+        list.appendChild(li);
+      } else if (line.trim() === "") {
+        flushPara();
+        list = null;
+      } else {
+        list = null;
+        buf.push(line);
+      }
+    }
+    flushPara();
+  }
+
+  // Try the real backend (Vercel function) first; fall back to the
+  // in-preview window.claude helper so this works in both places.
+  async function getReply(messages) {
+    try {
+      const r = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ messages: messages }),
+      });
+      if (r.ok) {
+        const data = await r.json();
+        if (data && typeof data.text === "string" && data.text.trim()) return data.text.trim();
+      }
+      throw new Error("backend unavailable");
+    } catch (e) {
+      // Fallback: preview environment with window.claude available
+      if (window.claude && window.claude.complete) {
+        const rendered = messages
+          .map((m) => (m.role === "user" ? "Visitor: " : "elias-agent: ") + m.content)
+          .join("\n");
+        const prompt =
+          PROFILE +
+          "\n\n=== CONVERSATION SO FAR ===\n" +
+          rendered +
+          "\n\nReply as elias-agent now, following the answering rules above. Write for a recruiter who skims: lead with the headline, keep paragraphs to 1-2 sentences with a blank line between ideas, and use bullet lines (\"- \") whenever you list 2+ projects, metrics, or steps. **Bold** key numbers. Label any undocumented claim as an (Inference).";
+        const text = await window.claude.complete({ messages: [{ role: "user", content: prompt }] });
+        return (text || "").trim();
+      }
+      throw e;
+    }
+  }
+
+  async function ask(q) {
+    if (busy || !q.trim() || sessionCount >= MAX_MSGS) return;
+    busy = true;
+    sendBtn.disabled = true;
+    addMsg("user", q);
+    convo.push({ role: "user", content: q.trim() });
+    sessionCount++;
+    updateCounter();
+    input.value = "";
+    const typing = addTyping();
+
+    try {
+      const answer =
+        (await getReply(convo)) ||
+        "Sorry — I couldn't generate a response just now. Email Elias at elias.arellano.campos@gmail.com.";
+      typing.remove();
+      const el = addMsg("bot", "");
+      convo.push({ role: "assistant", content: answer });
+      if (reduce) {
+        renderRich(el, answer);
+        body.scrollTop = body.scrollHeight;
+      } else {
+        let i = 0;
+        const speed = Math.max(6, Math.min(18, 900 / answer.length));
+        (function type() {
+          i += 2;
+          renderRich(el, answer.slice(0, i));
+          body.scrollTop = body.scrollHeight;
+          if (i < answer.length) setTimeout(type, speed);
+        })();
+      }
+    } catch (err) {
+      typing.remove();
+      addMsg(
+        "bot",
+        "The live demo is unavailable right now. You can still reach Elias directly at elias.arellano.campos@gmail.com — and explore the projects above."
+      );
+    } finally {
+      busy = false;
+      if (sessionCount >= MAX_MSGS) {
+        lockInput();
+        setTimeout(function () {
+          addMsg(
+            "bot",
+            "That's the 4-message limit for this demo — it's self-funded, so I cap it to keep API costs sane. For anything more, email Elias at elias.arellano.campos@gmail.com or connect on LinkedIn. He'd genuinely love to talk."
+          );
+        }, 600);
+      } else {
+        sendBtn.disabled = false;
+        input.focus();
+      }
+    }
+  }
+
+  updateCounter();
+  sendBtn.addEventListener("click", () => ask(input.value));
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") ask(input.value);
+  });
+  suggest.addEventListener("click", (e) => {
+    const btn = e.target.closest("button");
+    if (btn) ask(btn.dataset.q);
+  });
+})();
+</script>
+</body>
+</html>
